@@ -5,13 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class Prac1AlphaHandler : MonoBehaviour
 {
-    public GameObject[] gameObjects; // Array GameObject untuk menyimpan GameObject yang akan dinavigasikan
+    public GameObject TrueScreen;
+    public GameObject FalseScreen;
+    public GameObject[] Questions; // Array GameObject untuk menyimpan GameObject yang akan dinavigasikan
     private int currentIndex = 0; // Indeks GameObject saat ini
 
     void Start()
     {
         // Pastikan indeks saat ini berada di dalam rentang yang valid
-        currentIndex = Mathf.Clamp(currentIndex, 0, gameObjects.Length - 1);
+        currentIndex = Mathf.Clamp(currentIndex, 0, Questions.Length - 1);
         // Tampilkan GameObject pertama saat aplikasi dimulai
         ShowCurrentGameObject();
     }
@@ -20,7 +22,7 @@ public class Prac1AlphaHandler : MonoBehaviour
     {
         // Navigasi ke GameObject berikutnya
         currentIndex++;
-        if (currentIndex >= gameObjects.Length)
+        if (currentIndex >= Questions.Length)
         {
             currentIndex = 0; // Kembali ke GameObject pertama jika sudah mencapai akhir daftar
         }
@@ -33,7 +35,7 @@ public class Prac1AlphaHandler : MonoBehaviour
         currentIndex--;
         if (currentIndex < 0)
         {
-            currentIndex = gameObjects.Length - 1; // Kembali ke GameObject terakhir jika sudah mencapai awal daftar
+            currentIndex = Questions.Length - 1; // Kembali ke GameObject terakhir jika sudah mencapai awal daftar
         }
         ShowCurrentGameObject();
     }
@@ -41,12 +43,12 @@ public class Prac1AlphaHandler : MonoBehaviour
     void ShowCurrentGameObject()
     {
         // Sembunyikan semua GameObject
-        foreach (GameObject go in gameObjects)
+        foreach (GameObject go in Questions)
         {
             go.SetActive(false);
         }
         // Tampilkan GameObject yang sesuai dengan indeks saat ini
-        gameObjects[currentIndex].SetActive(true);
+        Questions[currentIndex].SetActive(true);
     }
     public GameObject MakeSureBack;
 

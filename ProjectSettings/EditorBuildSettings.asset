@@ -9,11 +9,17 @@ EditorBuildSettings:
     path: Assets/1b. Scenes/LoadingScene.unity
     guid: 0b5dfe0f680c16148b7ef006f5a4ed6a
   - enabled: 1
-    path: Assets/1b. Scenes/ApkFirstRun.unity
+    path: Assets/1b. Scenes/GetStarted.unity
+    guid: 6b392014644e3444ca74fc082b36046e
+  - enabled: 1
+    path: Assets/1b. Scenes/SignUpScene.unity
     guid: e080c7fe0b3f6ed4e9c2017f1eb7e213
   - enabled: 1
-    path: Assets/1b. Scenes/ApkRun1.unity
+    path: Assets/1b. Scenes/HomeScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/1b. Scenes/MoreScene.unity
+    guid: 8d8bd3fdc4f3a784c8f0f809b2dee241
   - enabled: 1
     path: Assets/1b. Scenes/SceneAR.unity
     guid: f0b3c72606cc632408b11687aaae4cf2

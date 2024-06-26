@@ -28,6 +28,6 @@ public class LoadingHandler : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         // Menambahkan baris untuk mengganti scene ke scene lain
-        SceneManager.LoadScene("ApkFirstRun");
+        SceneManager.LoadScene("GetStarted");
     }
 }

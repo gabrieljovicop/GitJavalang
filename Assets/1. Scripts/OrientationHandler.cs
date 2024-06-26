@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class GameObjectSwitcher : MonoBehaviour
+public class GameObjectLayarSwitcher : MonoBehaviour
 {
     // Game object dalam mode portrait
     public GameObject portraitObject;

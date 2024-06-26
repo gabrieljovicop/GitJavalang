@@ -16,9 +16,15 @@ public class FirstRunHandler : MonoBehaviour
         // Menampilkan halaman pilih bahasa tanpa penundaan
         HalamanPilihBahasa.SetActive(true);
     }
+
+    public void changeToBahasa(){
+        HalamanRegistrasi.SetActive(false);
+        HalamanPilihBahasa.SetActive(true);
+    }
     
     public void changeToRegis(){
         HalamanPilihBahasa.SetActive(false);
+        HalamanIsiNama.SetActive(false);
         HalamanRegistrasi.SetActive(true);
     }
 
